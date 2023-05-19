@@ -9,17 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.2",
     "@types/node": "20.0.0",
     "@types/react": "18.2.5",
     "@types/react-dom": "18.2.3",
     "autoprefixer": "10.4.14",
+    "daisyui": "^2.51.6",
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.1",
+    "flubber": "^0.4.2",
     "next": "13.4.1",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-scroll": "^1.8.9",
+    "react-spring": "^9.7.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.7"
   }
 }
