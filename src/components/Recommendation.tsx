@@ -1,5 +1,4 @@
 import React from 'react';
-import RecommendationCard from './RecommendationCard';
 import Image from 'next/image';
 import hr from '../../public/hr.webp';
 type Props = {}
