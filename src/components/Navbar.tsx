@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { Dispatch, useState } from "react";
-import logo from "../../public/logo.png";
 import logoMob from "../../public/logoMob.png";
 import Hamburger from "../../public/hamburger.png";
 import Close from "../../public/Close.png";
@@ -16,13 +15,13 @@ type Props = {
 export default function Navbar({open,setOpen}: Props) {
   
   return (
-    <div className=" top-0 bg-gradient-to-r from-[#DF4848] to-[#4400a6]">
-      <nav className="px-8 flex bg-gradient-to-r from-[#DF4848] to-[#4400a6] lg:bg-transparent lg:flex-row flex-col lg:items-center items-start justify-between text-black py-3">
+    <div className=" top-0 bg-gradient-to-l from-[#DF4848] to-[#4400a6]">
+      <nav className="px-8 flex bg-gradient-to-l from-[#DF4848] to-[#4400a6] lg:bg-transparent lg:flex-row flex-col lg:items-center items-start justify-between text-black py-3">
         {/* Logo Section */}
         <div className="flex flex-row justify-between w-full lg:w-auto items-center space-x-3 ">
           <div className="flex flex-row justify-between items-center space-x-3">
           <div>
-          <Image width={128} height={128} src={logo} alt="logo"  />
+          <Image width={128} height={128} src={logoMob} alt="logo"  />
           </div>
           </div>
           <div className="h-[24px] w-[24px]" onClick={()=>setOpen(!open)}>
