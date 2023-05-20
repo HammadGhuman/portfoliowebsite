@@ -10,9 +10,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        sans:['var(--font-poppins)']
+      },
       colors:{
         primary:'#DF5858',
-        secondary:'#530000'
+        secondary:'#4400a6',
+        dark:'#000000'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -20,6 +24,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'hero-pattern-mobile': "url('/HeroMobile.svg')",
           'logo' : "url('/logo.png')",
+          'logoMob' : "url('/logoMob.png')",
           'hero-pattern-desktop': "url('/new.svg')",
           'contactUsLeft': "url('/contactUsMob.svg')",
           'close' : "url('/Close.png')",

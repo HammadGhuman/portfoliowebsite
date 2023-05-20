@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 type Props = {
     cardBg:any,
     Word1:string,
@@ -11,18 +12,18 @@ type Props = {
 
 const Card = ({cardBg,Word1,Word2,Word3,para}: Props) => {
   return (
-    <div className="w-[350px]  relative rounded-xl text-red-950 shadow-lg shadow-primary">
-      <div className="mt-10 flex items-center justify-center">
+    <motion.div className="w-[350px] h-[500px] relative rounded-xl text-red-950 shadow-lg shadow-primary">
+      <motion.div initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:3}} className="mt-10 flex items-center justify-center">
         <Image src={cardBg} alt="CardBg" height={200} width={250} />
-      </div>
-      <h1 className="text-2xl mt-5 font-semibold text-center px-4">
+      </motion.div>
+      <motion.h1 initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:3}}  className="text-2xl mt-5 font-semibold text-center px-4">
         {Word1} <span className="line-through">{Word2}</span>{" "}
         <span className="text-primary">{Word3}</span>
-      </h1>
-      <p className="mt-8 font-medium px-4 pb-10">
+      </motion.h1>
+      <motion.p initial={{opacity:0,y:100}} animate={{opacity:1,y:0}} transition={{duration:3}}  className="mt-8 font-medium px-4 pb-10">
         {para}
-      </p>
-    </div>
+      </motion.p>
+    </motion.div>
   );
 };
 

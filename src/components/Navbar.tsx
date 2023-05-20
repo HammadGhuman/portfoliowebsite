@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { Dispatch, useState } from "react";
 import logo from "../../public/logo.png";
+import logoMob from "../../public/logoMob.png";
 import Hamburger from "../../public/hamburger.png";
 import Close from "../../public/Close.png";
 // import Link from "next/link";
@@ -15,8 +16,8 @@ type Props = {
 export default function Navbar({open,setOpen}: Props) {
   
   return (
-    <div className="sticky top-0 bg-gradient-to-r from-[#DF4848] to-[#4400a6]">
-      <nav className="px-8 flex bg-gray-100 lg:bg-transparent lg:flex-row flex-col lg:items-center items-start justify-between text-black py-3">
+    <div className=" top-0 bg-gradient-to-r from-[#DF4848] to-[#4400a6]">
+      <nav className="px-8 flex bg-gradient-to-r from-[#DF4848] to-[#4400a6] lg:bg-transparent lg:flex-row flex-col lg:items-center items-start justify-between text-black py-3">
         {/* Logo Section */}
         <div className="flex flex-row justify-between w-full lg:w-auto items-center space-x-3 ">
           <div className="flex flex-row justify-between items-center space-x-3">
@@ -32,7 +33,7 @@ export default function Navbar({open,setOpen}: Props) {
         {/* Home-->Services-->Projects-->Recommendations-->Our Story-->Contact us */}
        {( <><div className={`flex lg:flex-row lg:space-x-10 ${!open && "hidden lg:flex"} flex-col space-y-5 lg:space-y-0 lg:my-0 my-10  w-full lg:w-auto items-center font-semibold`}>
           <Link
-            className="hover:text-primary cursor-pointer transition-colors text-white text-center py-3 rounded-xl w-full lg:w-auto duration-300"
+            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="about"
             spy={true}
@@ -43,7 +44,7 @@ export default function Navbar({open,setOpen}: Props) {
             About Us
           </Link>
           <Link
-            className="hover:text-primary cursor-pointer transition-colors text-white text-center py-3 rounded-xl w-full lg:w-auto duration-300"
+            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="services"
             spy={true}
@@ -54,7 +55,7 @@ export default function Navbar({open,setOpen}: Props) {
             Services
           </Link>
           <Link
-            className="hover:text-primary cursor-pointer transition-colors text-white text-center py-3 rounded-xl w-full lg:w-auto duration-300"
+            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="services"
             spy={true}
@@ -65,7 +66,7 @@ export default function Navbar({open,setOpen}: Props) {
             Projects
           </Link>
           <Link
-            className="hover:text-primary cursor-pointer transition-colors text-white text-center py-3 rounded-xl w-full lg:w-auto duration-300"
+            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="services"
             spy={true}
@@ -76,7 +77,7 @@ export default function Navbar({open,setOpen}: Props) {
             Recommendations
           </Link>
           <Link
-            className="hover:text-primary cursor-pointer transition-colors text-white text-center py-3 rounded-xl w-full lg:w-auto duration-300"
+            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="services"
             spy={true}

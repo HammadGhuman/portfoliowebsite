@@ -6,12 +6,12 @@ type Props = {}
 
 const ContactUs = (props: Props) => {
   return (
-    <div className='flex lg:flex-row flex-col font-mono max-h-screen overflow-y-hidden text-gray-100'>
+    <div className='flex lg:flex-row flex-col font-mono min-h-screen overflow-y-hidden text-gray-100'>
       {/* Left Card */}
-      <div className='flex flex-col lg:max-w-[600px] bg-contactUsLeft bg-cover bg-no-repeat px-10 pt-10'>
-        <h1 className='text-center text-5xl font-bold'>Contact US</h1>
+      <div className='flex flex-col lg:min-w-[800px] bg-contactUsLeft bg-cover bg-no-repeat px-10 pt-10'>
+        <h1 className='text-start text-5xl font-bold'>Contact US</h1>
         <div className='mt-10 text-xl flex flex-col space-y-10'>
-          <p className='font-light font-mono'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eveniet numquam beatae magnam architecto tempore ipsa sunt itaque neque molestiae fuga error, aliquam consectetur voluptate nesciunt repellendus reiciendis aperiam non impedit ducimus voluptatum debitis laboriosam, aspernatur in. Atque ab quis excepturi itaque magni rerum dicta sapiente aliquid adipisci, accusantium dolorem?</p>
+          <p className='font-light font-mono max-w-[600px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eveniet numquam beatae magnam architecto tempore ipsa sunt itaque neque molestiae fuga error, aliquam consectetur voluptate nesciunt repellendus reiciendis aperiam non impedit ducimus voluptatum debitis laboriosam, aspernatur in. Atque ab quis excepturi itaque magni rerum dicta sapiente aliquid adipisci, accusantium dolorem?</p>
           <div>
           <p className='text-xl'>Email US <span className='text-white font-bold underline hover:text-blue-500 cursor-pointer transition-colors duration-300'>codemate@gmail.com</span></p>
           <p className='text-2xl font-bold'>Or</p>
@@ -27,15 +27,15 @@ const ContactUs = (props: Props) => {
         </div>
       </div>
       {/* Right Card */}
-      <div className='py-10 w-full'>
+      <div className='py-10 w-full bg-slate-100'>
         <h1 className='text-4xl text-center font-bold text-black'>Lets Discuss Your Project</h1>
-        <div className='px-20 mt-20' >
-          <form className='flex flex-col space-y-16 items-start' action="">
-            <input type="text" className="outline-none border-b-2 border-b-primary text-xl py-3 px-3 w-full text-primary placeholder:text-black" placeholder='Name' />
-            <input type="text" className="outline-none border-b-2 border-b-primary text-xl py-3 px-3 w-full text-primary placeholder:text-black" placeholder='Email' />
-            <input type="text" className="outline-none border-b-2 border-b-primary text-xl py-3 px-3 w-full text-primary placeholder:text-black" placeholder='Contact Number' />
-            <input type="text" className="outline-none border-b-2 border-b-primary text-xl py-3 px-3 w-full text-primary placeholder:text-black" placeholder='Project Description' />
-            <button className='ml-auto px-12 rounded-sm hover:bg-red-700 text-xl font-semibold py-3 bg-primary'>Submit</button>
+        <div className='mt-5 flex items-center justify-center' >
+          <form className='flex flex-col space-y-16 items-start w-[80%] px-20 py-10 bg-white shadow-xl' action="">
+            <input type="text" className="outline-none rounded-lg text-xl py-3 px-3 bg-slate-100 w-full text-primary placeholder:text-slate-300" placeholder='Name' />
+            <input type="text" className="outline-none rounded-lg text-xl py-3 px-3 bg-slate-100 w-full text-primary placeholder:text-slate-300" placeholder='Email' />
+            <input type="text" className="outline-none rounded-lg text-xl py-3 px-3 bg-slate-100 w-full text-primary placeholder:text-slate-300" placeholder='Contact Number' />
+            <input type="text" className="outline-none rounded-lg text-xl py-3 px-3 bg-slate-100 w-full text-primary placeholder:text-slate-300" placeholder='Project Description' />
+            <button className='ml-auto px-12 rounded-lg hover:bg-primary text-xl font-semibold py-3 text-black outline outline-primary transition-colors duration-300'>Submit</button>
           </form>
         </div>
       </div>
