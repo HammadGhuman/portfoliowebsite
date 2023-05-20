@@ -38,27 +38,27 @@ const Recommendation = (props: Props) => {
 
             </div>
             </div>
-            <div className='bg-white'>
+            {/* <div className='bg-white'>
             <iframe src="http://www.youtube.com/embed/W7qWa52k-nE" className='w-full' height="200" allowFullScreen></iframe>
             <div className='px-3 mt-2'>
             <Image width={20} height={20} src={hr} alt="img" />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptas?</p>
             </div>
-            </div>
-            <div className='bg-white'>
+            </div> */}
+            {/* <div className='bg-white'>
             <iframe src="http://www.youtube.com/embed/W7qWa52k-nE" className='w-full' height="200" allowFullScreen></iframe>
             <div className='px-3 mt-2'>
             <Image width={20} height={20} src={hr} alt="img" />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptas?</p>
             </div>
-            </div>
-            <div className='bg-white'>
+            </div> */}
+            {/* <div className='bg-white'>
             <iframe src="http://www.youtube.com/embed/W7qWa52k-nE" className='w-full' height="200" allowFullScreen></iframe>
             <div className='px-3 mt-2'>
             <Image width={20} height={20} src={hr} alt="img" />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptas?</p>
             </div>
-            </div>
+            </div> */}
           </div>
     </div>
   )

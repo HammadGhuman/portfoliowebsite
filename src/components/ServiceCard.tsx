@@ -22,10 +22,10 @@ const ServiceCard = ({ AnimationData, heading,text,color }: Props) => {
     {text}
         </p>
         <div className="grid grid-flow-row grid-cols-3 max-w-sm gap-3">
-          <TechStackButton />
-          <TechStackButton />
-          <TechStackButton />
-          <TechStackButton />
+          <TechStackButton techName="ReactJS" />
+          <TechStackButton techName="NodeJS" />
+          <TechStackButton techName="TailwindCss" />
+          <TechStackButton techName="Typescript" />
         </div>
       </div>
         <Lottie className="max-w-[300px] max-h-[300px] self-center" loop={false}  animationData={AnimationData}/>

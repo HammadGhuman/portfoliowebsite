@@ -18,11 +18,9 @@ export default function Navbar({open,setOpen}: Props) {
     <div className=" top-0 bg-gradient-to-l from-[#DF4848] to-[#4400a6]">
       <nav className="px-8 flex bg-gradient-to-l from-[#DF4848] to-[#4400a6] lg:bg-transparent lg:flex-row flex-col lg:items-center items-start justify-between text-black py-3">
         {/* Logo Section */}
-        <div className="flex flex-row justify-between w-full lg:w-auto items-center space-x-3 ">
-          <div className="flex flex-row justify-between items-center space-x-3">
-          <div>
+        <div className="flex lg:flex-row justify-between w-full lg:w-auto items-center space-x-3 flex-row-reverse">
+          <div className="absolute top-0 lg:static -left-10 lg:left-0">
           <Image width={170} height={170} src={logoMob} alt="logo"  />
-          </div>
           </div>
           <div className="h-[24px] w-[24px]" onClick={()=>setOpen(!open)}>
             {open ? <Image className="lg:hidden" src={Close} alt="Close Icon" /> : <Image className="lg:hidden" src={Hamburger} alt="Close Icon" />}
@@ -31,7 +29,7 @@ export default function Navbar({open,setOpen}: Props) {
         {/* Links */}
         {/* Home-->Services-->Projects-->Recommendations-->Our Story-->Contact us */}
        {( <><div className={`flex lg:flex-row lg:space-x-10 ${!open && "hidden lg:flex"} flex-col space-y-5 lg:space-y-0 lg:my-0 my-10  w-full lg:w-auto items-center font-semibold`}>
-          <Link
+          {/* <Link
             className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="about"
@@ -41,9 +39,9 @@ export default function Navbar({open,setOpen}: Props) {
             duration={500}
           >
             About Us
-          </Link>
+          </Link> */}
           <Link
-            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
+            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black lg:text-white text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="services"
             spy={true}
@@ -53,7 +51,7 @@ export default function Navbar({open,setOpen}: Props) {
           >
             Services
           </Link>
-          <Link
+          {/* <Link
             className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="services"
@@ -63,9 +61,9 @@ export default function Navbar({open,setOpen}: Props) {
             duration={500}
           >
             Projects
-          </Link>
+          </Link> */}
           <Link
-            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
+            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black lg:text-white text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="services"
             spy={true}
@@ -76,7 +74,7 @@ export default function Navbar({open,setOpen}: Props) {
             Recommendations
           </Link>
           <Link
-            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black text-center py-3 rounded-xl w-full lg:w-auto duration-300"
+            className="hover:text-primary cursor-pointer bg-white lg:bg-transparent transition-colors text-black lg:text-white text-center py-3 rounded-xl w-full lg:w-auto duration-300"
             activeClass="active"
             to="services"
             spy={true}

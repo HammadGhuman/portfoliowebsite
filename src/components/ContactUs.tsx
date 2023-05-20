@@ -8,7 +8,7 @@ const ContactUs = (props: Props) => {
   return (
     <div className='flex lg:flex-row flex-col font-mono min-h-screen overflow-y-hidden text-gray-100'>
       {/* Left Card */}
-      <div className='flex flex-col lg:min-w-[800px] bg-contactUsLeft bg-cover bg-no-repeat px-10 pt-10'>
+      <div className='flex flex-col lg:min-w-[800px]  bg-contactUsLeft bg-cover bg-no-repeat px-10 pt-10'>
         <h1 className='text-start text-5xl font-bold'>Contact US</h1>
         <div className='mt-10 text-xl flex flex-col space-y-10'>
           <p className='font-light font-mono max-w-[600px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eveniet numquam beatae magnam architecto tempore ipsa sunt itaque neque molestiae fuga error, aliquam consectetur voluptate nesciunt repellendus reiciendis aperiam non impedit ducimus voluptatum debitis laboriosam, aspernatur in. Atque ab quis excepturi itaque magni rerum dicta sapiente aliquid adipisci, accusantium dolorem?</p>
@@ -27,10 +27,10 @@ const ContactUs = (props: Props) => {
         </div>
       </div>
       {/* Right Card */}
-      <div className='py-10 w-full bg-slate-100'>
+      <div className='pt-10 w-full bg-slate-100'>
         <h1 className='text-4xl text-center font-bold text-black'>Lets Discuss Your Project</h1>
         <div className='mt-5 flex items-center justify-center' >
-          <form className='flex flex-col space-y-16 items-start w-[80%] bg-white lg:px-20 py-10  shadow-xl' action="">
+          <form className='flex flex-col px-5 space-y-16 items-start w-full bg-white lg:px-20 py-10  shadow-xl' action="">
             <input type="text" className="outline-none rounded-lg text-xl py-3 px-3 bg-slate-100 w-full text-primary placeholder:text-slate-300" placeholder='Name' />
             <input type="text" className="outline-none rounded-lg text-xl py-3 px-3 bg-slate-100 w-full text-primary placeholder:text-slate-300" placeholder='Email' />
             <input type="text" className="outline-none rounded-lg text-xl py-3 px-3 bg-slate-100 w-full text-primary placeholder:text-slate-300" placeholder='Contact Number' />

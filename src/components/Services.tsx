@@ -1,12 +1,9 @@
 "use client";
 import React, { useState } from 'react'
-import webDev from '../../public/webdev.png';
-import ServiceBlob from '../../public/test.svg';
-import Image from 'next/image';
 import ServiceCard from './ServiceCard';
 import WebAnimation from '../../public/webdevAnimationData.json'
 import Mobile from '../../public/appdevAnimationData.json'
-import Prototype from '../../public/webdevAnimationData.json'
+
 type Props = {}
 
 function Services({}: Props) {
@@ -19,7 +16,7 @@ function Services({}: Props) {
     <div id="services" className='relative overflow-y-hidden'>  
         <ServiceCard key={1} color={'bg-primary'} heading={"Web Development"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde culpa vel fugit accusamus voluptate ab fugiat, nemo molestias explicabo!"} AnimationData={WebAnimation}/>
         <ServiceCard key={2} color={'bg-secondary'}heading={"App Development"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde culpa vel fugit accusamus voluptate ab fugiat, nemo molestias explicabo!"} AnimationData={Mobile}/>
-        <ServiceCard key={3} color={'bg-black'}heading={"Web Development"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde culpa vel fugit accusamus voluptate ab fugiat, nemo molestias explicabo!"} AnimationData={Mobile}/>
+        {/* <ServiceCard key={3} color={'bg-black'}heading={"Web Development"} text={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde culpa vel fugit accusamus voluptate ab fugiat, nemo molestias explicabo!"} AnimationData={Mobile}/> */}
     </div>
   )
 }

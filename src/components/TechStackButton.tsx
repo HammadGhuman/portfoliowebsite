@@ -1,11 +1,13 @@
 import React from 'react'
 
-type Props = {}
+type Props = {
+    techName:string
+}
 
-const TechStackButton = (props: Props) => {
+const TechStackButton = ({techName}: Props) => {
   return (
-    <p className='px-5 py-2 bg-red-500 rounded-md'>
-        React JS
+    <p className='px-5 py-2 text-center to-[#48DFDF] bg-gradient-to-r from-[#62A600] rounded-lg'>
+        {techName}
     </p>
   )
 }
