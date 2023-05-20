@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {};
-
+/* eslint-disable react/no-unescaped-entities */
 const Story = (props: Props) => {
   return (
     <div className="mt-5 px-[10vw] pb-16">
