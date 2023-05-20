@@ -12,13 +12,15 @@ const Project3 = (props: Props) => {
   return (
   <>
       <h1 className="text-5xl my-16 font-bold text-center">Our Projects</h1>
+      <div className="flex items-center justify-center">
       <motion.div 
-        className="carousel rounded-box w-[87%] lg:mx-28 mx-8"
+        className="carousel rounded-box lg:mx-28"
       >
         {slides.map((item,index)=>(
           <ProjectCard id={item} key={index} pic={Pic1} />
         ))}
       </motion.div>
+      </div>
       <div className="flex items-center justify-center my-10 space-x-10">
       <a href={`#slide${current}`} className="hover:bg-primary outline outline-primary flex items-center justify-center btn-circle" onClick={()=>{
         if(current === 2){

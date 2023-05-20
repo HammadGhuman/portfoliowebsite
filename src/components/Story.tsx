@@ -9,7 +9,7 @@ const Story = (props: Props) => {
       <h1 className="text-3xl mt-16">We are a software development team with a <span className="text-primary"> major twist! </span></h1>
       <p className="text-xl text-gray-500 mt-6">At CodeMate, we are passionate about creating exceptional software solutions while delivering outstanding customer service. We understand that our clients' success relies not only on the quality of our software but also on the level of support and satisfaction they experience throughout their journey with us.</p>
       <p className="text-xl text-gray-500 mt-6">The very foundation of CodeMate has been laid on delivering top-notch customer service and ensuring client  satisfaction every step of the way.</p>
-      <div className="grid grid-cols-2 grid-rows-3 mt-16">
+      <div className="grid lg:grid-cols-2 grid-cols-1 mt-16 gap-10 lg:gap-0">
       <div>
         <h1 className="text-3xl mb-8" ><span className="text-primary">Customer-Centric</span> Approach</h1>
         <p className="text-xl w-[90%] text-gray-500">
