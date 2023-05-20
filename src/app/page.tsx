@@ -23,7 +23,7 @@ export default function page() {
         {!open && (<div className='flex flex-col justify-start items-start text-red-950 mt-20  '>
         <p className="lg:text-7xl text-4xl font-bold max-w-3xl text-start text-white">We are a customer-first software development team offering quality solutions in best value</p>
         {/* <h1 className='text-2xl text-white font-bold outline hover:outline-none outline-2 mt-10 hover:bg-[#da4848] outline-white rounded-full px-5 py-1'>Contact Us</h1> */}
-       <button className="text-xl px-8 py-3 mb-6 hover:bg-black hover:text-white hover:outline-none outline text-white outline-white rounded-3xl mt-16 transition-colors duration-300">Contact Us</button>
+       <button className="text-xl px-8 py-3 mb-6 hover:bg-black hover:text-white hover:outline-none outline text-white outline-white rounded-3xl mt-16 transition-colors duration-300">Book a Consultation</button>
       </div>)}
       <div className='lg:max-w-[500px] max-w-[300px]'>
         <Lottie animationData={AnimationData}/>

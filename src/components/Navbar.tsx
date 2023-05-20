@@ -21,7 +21,7 @@ export default function Navbar({open,setOpen}: Props) {
         <div className="flex flex-row justify-between w-full lg:w-auto items-center space-x-3 ">
           <div className="flex flex-row justify-between items-center space-x-3">
           <div>
-          <Image width={128} height={128} src={logoMob} alt="logo"  />
+          <Image width={170} height={170} src={logoMob} alt="logo"  />
           </div>
           </div>
           <div className="h-[24px] w-[24px]" onClick={()=>setOpen(!open)}>
