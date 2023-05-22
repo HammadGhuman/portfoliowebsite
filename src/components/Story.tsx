@@ -4,7 +4,7 @@ type Props = {};
 /* eslint-disable react/no-unescaped-entities */
 const Story = (props: Props) => {
   return (
-    <div className="mt-5 px-[10vw] pb-16">
+    <div id="about" className="mt-5 px-[10vw] pb-16">
       <h1 className="text-center mt-16 text-5xl font-bold">About Us</h1>
       <h1 className="text-3xl mt-16">We are a software development team with a <span className="text-primary"> major twist! </span></h1>
       <p className="text-xl text-gray-500 mt-6">At CodeMate, we are passionate about creating exceptional software solutions while delivering outstanding customer service. We understand that our clients' success relies not only on the quality of our software but also on the level of support and satisfaction they experience throughout their journey with us.</p>

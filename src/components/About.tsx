@@ -9,7 +9,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div id="about" className="min-h-screen py-10">
+    <div id="vision" className="min-h-screen py-10">
       {/* <div className='bg-wave w-full h-48 bg-no-repeat bg-cover absolute'></div> */}
       <div className="flex flex-col items-center pt-5">
         <h1 className="max-w-xl text-center text-4xl font-bold text-black">

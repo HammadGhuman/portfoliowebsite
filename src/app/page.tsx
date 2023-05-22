@@ -14,11 +14,22 @@ import Story from '@/components/Story';
 export default function page() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [open,setOpen] = useState(false);
+  const [navbar,setNavbar] = useState(false);
+  const changeNav = () => {
+      if(window.scrollY >= 95.72){
+        setNavbar(true);
+      }else{
+        setNavbar(false);
+      }
+  }
+
+  document.addEventListener("scroll",changeNav);
+
   return (
    <div className="">
     {/* <main className="h-screen md:bg-hero-pattern-desktop bg-hero-pattern-mobile bg-no-repeat bg-cover"> */}
     <main className="min-h-screen bg-gradient-to-l  from-[#DF4848] to-[#4400a6]">
-    <Navbar open={open} setOpen={setOpen}/>
+      <Navbar open={open} setOpen={setOpen} navbar={navbar} setNavbar={setNavbar}/>
       <div className='flex items-center justify-center px-4 lg:flex-row  flex-col'>
         {!open && (<div className='flex flex-col justify-start items-start text-red-950 mt-20  '>
         <p className="lg:text-6xl text-3xl font-bold max-w-3xl text-start text-white lg:max-w-[700px]">We are a <span className="capitalize text-primary"> customer-first</span> software development team offering quality solutions in best value</p>

@@ -6,7 +6,7 @@ type Props = {}
 
 const ContactUs = (props: Props) => {
   return (
-    <div className='flex lg:flex-row flex-col font-mono min-h-screen overflow-y-hidden text-gray-100'>
+    <div id="contact" className='flex lg:flex-row flex-col font-mono min-h-screen overflow-y-hidden text-gray-100'>
       {/* Left Card */}
       <div className='flex flex-col lg:min-w-[800px]  bg-contactUsLeft bg-cover bg-no-repeat px-10 pt-10'>
         <h1 className='text-start text-5xl font-bold'>Contact US</h1>

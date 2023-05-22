@@ -5,7 +5,7 @@ type Props = {}
 
 const Recommendation = (props: Props) => {
   return (
-    <div className='px-[10vw] py-[10vh] flex flex-col items-center justify-between bg-recommendation bg-no-repeat bg-cover'>
+    <div id="recommendation" className='px-[10vw] py-[10vh] flex flex-col items-center justify-between bg-recommendation bg-no-repeat bg-cover'>
       <div className='flex flex-row space-x-10 mb-10 items-center justify-center'>
         <div className='border-y-2 border-white w-64 h-0 lg:block hidden'></div>
         <div className='flex flex-col items-center justify-center'>
