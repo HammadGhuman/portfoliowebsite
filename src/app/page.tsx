@@ -14,6 +14,7 @@ import Story from '@/components/Story';
 export default function page() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [open,setOpen] = useState(false);
+    // eslint-disable-next-line react-hooks/rules-of-hooks
   const [navbar,setNavbar] = useState(false);
   const changeNav = () => {
       if(window.scrollY >= 95.72){
