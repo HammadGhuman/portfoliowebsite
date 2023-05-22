@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 import About from '@/components/About';
 import Services from '@/components/Services';
 import ContactUs from '@/components/ContactUs';
-import { useState,useRef } from 'react';
+import { useState,useRef, useEffect } from 'react';
 import Project3 from '@/components/Project3';
 import Recommendation from '@/components/Recommendation';
 import Lottie,{LottieRefCurrentProps} from 'lottie-react';
@@ -24,8 +24,11 @@ export default function page() {
       }
   }
 
-  document.addEventListener("scroll",changeNav);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(()=>{
+    document.addEventListener("scroll",changeNav);
 
+  },[])
   return (
    <div className="">
     {/* <main className="h-screen md:bg-hero-pattern-desktop bg-hero-pattern-mobile bg-no-repeat bg-cover"> */}
